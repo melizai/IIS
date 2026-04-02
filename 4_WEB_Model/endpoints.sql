@@ -1,11 +1,3 @@
-BEGIN 
-ORDS.ENABLE_SCHEMA(
-p_enabled => FALSE);
- ORDS.drop_rest_for_schema();
- COMMIT; 
-END; 
-
-
 BEGIN
     ORDS.DEFINE_MODULE(
         p_module_name    => 'analytics_api',
